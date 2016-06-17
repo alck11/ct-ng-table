@@ -1,1 +1,1 @@
-# ct-ngTable
+# ct-ng-table
