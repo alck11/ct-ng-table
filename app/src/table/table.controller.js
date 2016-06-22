@@ -3,6 +3,9 @@
   var TableController = function (CookiejarService) {
     var _this = this;
 
+    _this.sortType = null;
+    _this.sortReverse = false;
+
     activate();
 
     function activate() {

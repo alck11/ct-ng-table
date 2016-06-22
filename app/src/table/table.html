@@ -1,0 +1,20 @@
+<div class="table">
+  <table class="ui celled structured table">
+    <thead>
+      <tr>
+        <th x-ng-repeat="key in table.cookieKey">
+          <a href="#" x-ng-click="table.sortType = key; table.sortReverse = !table.sortReverse;">
+            {{key | uppercase}}
+          </a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr x-ng-repeat="cookie in table.cookieJar | orderBy:table.sortType:table.sortReverse">
+        <td>{{cookie.name}}</td>
+        <td>{{cookie.price}}</td>
+        <td>{{cookie.category}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
