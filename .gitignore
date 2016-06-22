@@ -29,9 +29,13 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+semantic
 
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
 .node_repl_history
+
+# Semantic UI
+semantic.json

@@ -1,0 +1,50 @@
+{
+  "name": "ct-ng-table",
+  "version": "1.0.0",
+  "description": "fed code exercise",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alck11/ct-ng-table.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "alam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alck11/ct-ng-table/issues"
+  },
+  "homepage": "https://github.com/alck11/ct-ng-table#readme",
+  "devDependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-mocks": "^1.5.7",
+    "angular-sanitize": "^1.5.7",
+    "chai": "^3.5.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.*",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-uglify": "^1.5.*",
+    "gulp-useref": "^3.0.*",
+    "gulp-watch": "^4.3.6",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "karma": "^0.13.22",
+    "mocha": "^2.5.3",
+    "pouchdb": "^5.4.4",
+    "run-sequence": "^1.1.5",
+    "semantic-ui": "^2.1.8",
+    "sinon": "^1.17.4"
+  }
+}
