@@ -2,17 +2,14 @@
 {
   'use strict';
 
-  var table = function ()
+  var inputForm = function ()
   {
     return {
-      scope: {
-        type: '=table',
-      },
       restrict: 'A',
-      templateUrl: 'src/table/table.html',
+      templateUrl: 'src/input/input.html',
       replace: true,
-      controller: 'TableController',
-      controllerAs: 'table',
+      controller: 'InputController',
+      controllerAs: 'input',
       bindToController: true,
       link: function (scope, element, attributes) {},
     };
@@ -20,5 +17,5 @@
 
   angular
     .module('ctTable')
-    .directive('table', [table]);
+    .directive('inputForm', [inputForm]);
 })();

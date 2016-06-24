@@ -1,0 +1,63 @@
+<div class="inputForm">
+  <div class="ui segment container">
+    <div class="row">
+      <form class="ui form"
+            name="newCookie"
+            x-ng-submit="input.addCookie()"
+            novalidate>
+        <div class="inline fields">
+          <div class="three wide field">
+            <h4>Add a cookie</h4>
+          </div>
+          <div class="five wide field">
+            <input type="text"
+                  placeholder="Name"
+                  name="name"
+                  x-ng-minlength="1"
+                  x-ng-model="input.cookie.name"
+                  x-ng-maxlength="100"
+                  required>
+          </div>
+          <div class="three wide field">
+            <input type="text"
+                  placeholder="Price xxx.xx"
+                  name="price"
+                  x-ng-model="input.cookie.price"
+                  x-ng-pattern="input.pricePattern"
+                  required>
+          </div>
+          <div class="three wide field">
+            <select class="ui simple dropdown item"
+                    name="category"
+                    x-ng-model="input.cookie.category"
+                    x-ng-model-options="{debouce: 200}"
+                    x-ng-options="category.id as category.name for category in input.categories"
+                    required>
+            </select>
+          </div>
+          <div class="two wide field">
+            <button class="ui button"
+                    type="submit"
+                    x-ng-disabled="newCookie.$invalid">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row ui form">
+      <div class="inline fields">
+        <div class="three wide field">
+        </div>
+        <div class="five wide field">
+          <span class="ui olive label" x-ng-show="newCookie.name.$error.required">Required!</span>
+        </div>
+        <div class="three wide field">
+          <span class="ui olive label" x-ng-show="newCookie.price.$error.required">Required!</span>
+          <span class="ui olive label" x-ng-show="!newCookie.price.$valid">Not a valid format</span>
+        </div>
+        <div class="three wide field">
+          <span class="ui olive label" x-ng-show="newCookie.category.$error.required">Required!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

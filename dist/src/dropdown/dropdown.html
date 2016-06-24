@@ -1,0 +1,18 @@
+<div class="dropdown">
+  <div class="ui form">
+    <div class="inline fields">
+      <div class="ten field wide">
+      </div>
+      <div class="six field wide">
+        <select class="ui simple dropdown item"
+                name="category"
+                x-ng-model="dropdown.category"
+                x-ng-model-options="{debouce: 200}"
+                x-ng-options="category.id as category.name for category in dropdown.categories"
+                x-ng-change="dropdown.changeCategory()">
+          <option value="">-- Choose a category --</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
