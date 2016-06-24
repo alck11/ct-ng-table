@@ -4,7 +4,7 @@
       <tr>
         <th x-ng-repeat="key in table.cookieKey">
           <a href="#" x-ng-click="table.sortType = key; table.sortReverse = !table.sortReverse;">
-            {{key}}
+            {{key | uppercase}}
           </a>
         </th>
       </tr>

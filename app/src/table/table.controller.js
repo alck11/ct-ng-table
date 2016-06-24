@@ -16,12 +16,11 @@
       CookiejarService.get().then(function (data) {
         _this.cookieJar = CookiejarService.processData(data.data);
         _this.cookieKey = Object.keys(_this.cookieJar[0]);
-      console.log(_this.cookieJar);
-
       });
     }
 
     function addCookie(event, arg) {
+      arg.price = parseFloat(arg.price);
       _this.cookieJar.push(arg);
     }
 
@@ -31,7 +30,6 @@
       } else {
         _this.cookieCategory = arg;
       }
-      console.log(arg);
     }
 
   };

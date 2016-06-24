@@ -33,12 +33,10 @@
     }
 
     function processData(data) {
-      var processed = [];
       data.forEach(function (element) {
         element.price = parseFloat(element.price.substring(1));
-        processed.push(element);
-      });
-      return processed;
+      }, data);
+      return data;
     }
   };
 

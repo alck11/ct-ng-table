@@ -36,7 +36,6 @@
     "jshint-stylish": "^2.2.0",
     "karma": "^0.13.22",
     "mocha": "^2.5.3",
-    "pouchdb": "^5.4.4",
     "run-sequence": "^1.1.5",
     "semantic-ui": "^2.1.8",
     "sinon": "^1.17.4"
